@@ -7,7 +7,7 @@ export default function BrandTemplateTwo({ data }) {
         <h2 className="text-xl font-medium text-indigo-200">{data.personal.title || "Brand Tagline or Category"}</h2>
       </div>
 
-      <div className="p-12 space-y-12 bg-white m-8 shadow-sm rounded-lg min-h-[800px]">
+      <div className="p-12 space-y-12 bg-white dark:bg-[#171717] m-8 shadow-sm rounded-lg min-h-[800px]">
         {/* Contact Strip */}
         <div className="flex justify-center flex-wrap gap-8 text-sm font-semibold text-slate-500 border-b border-slate-200 pb-8">
           {data.personal.email && <span>📧 {data.personal.email}</span>}

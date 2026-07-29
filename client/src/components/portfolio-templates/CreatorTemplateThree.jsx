@@ -1,6 +1,6 @@
 export default function CreatorTemplateThree({ data }) {
   return (
-    <div className="p-0 font-sans text-slate-900 dark:text-white bg-white min-h-[297mm]">
+    <div className="p-0 font-sans text-slate-900 dark:text-white bg-white dark:bg-[#171717] min-h-[297mm]">
       {/* Top Graphic Header */}
       <div className="bg-gradient-to-r from-teal-500 to-emerald-600 p-12 text-white shadow-md relative overflow-hidden">
         <div className="relative z-10">
@@ -8,7 +8,7 @@ export default function CreatorTemplateThree({ data }) {
           <h2 className="text-2xl font-semibold text-teal-100 tracking-wide uppercase">{data.personal.title || "Profession"}</h2>
         </div>
         {/* Decorative elements */}
-        <div className="absolute top-0 right-0 w-64 h-64 bg-white opacity-10 rounded-full -translate-y-1/2 translate-x-1/4"></div>
+        <div className="absolute top-0 right-0 w-64 h-64 bg-white dark:bg-[#171717] opacity-10 rounded-full -translate-y-1/2 translate-x-1/4"></div>
         <div className="absolute bottom-0 right-12 w-32 h-32 bg-teal-900 opacity-20 rounded-full translate-y-1/2"></div>
       </div>
 
@@ -81,7 +81,7 @@ export default function CreatorTemplateThree({ data }) {
               <h3 className="text-sm font-bold text-slate-400 uppercase tracking-widest mb-4">Skills</h3>
               <div className="flex flex-wrap gap-2">
                 {data.skills.map(skill => (
-                  <span key={skill} className="px-3 py-1 bg-white border border-slate-200 text-slate-700 text-xs font-bold rounded-full shadow-sm">
+                  <span key={skill} className="px-3 py-1 bg-white dark:bg-[#171717] border border-slate-200 text-slate-700 text-xs font-bold rounded-full shadow-sm">
                     {skill}
                   </span>
                 ))}

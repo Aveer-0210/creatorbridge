@@ -1,6 +1,6 @@
 export default function CreatorTemplateOne({ data }) {
   return (
-    <div className="p-12 font-sans text-slate-800 dark:text-white bg-white" style={{ minHeight: '100%' }}>
+    <div className="p-12 font-sans text-slate-800 dark:text-white bg-white dark:bg-[#171717]" style={{ minHeight: '100%' }}>
       {/* Header */}
       <header className="border-b-4 border-blue-600 pb-6 mb-8 flex justify-between items-end">
         <div>

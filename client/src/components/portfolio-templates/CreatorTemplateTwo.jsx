@@ -1,6 +1,6 @@
 export default function CreatorTemplateTwo({ data }) {
   return (
-    <div className="p-0 font-serif text-slate-800 dark:text-white bg-white flex" style={{ minHeight: '100%' }}>
+    <div className="p-0 font-serif text-slate-800 dark:text-white bg-white dark:bg-[#171717] flex" style={{ minHeight: '100%' }}>
       {/* Left Dark Sidebar */}
       <div className="w-1/3 bg-slate-900 text-white p-10 flex flex-col min-h-[297mm]">
         <div className="mb-12">
@@ -68,7 +68,7 @@ export default function CreatorTemplateTwo({ data }) {
                   <h4 className="text-xl font-bold text-slate-800 dark:text-white">{exp.role}</h4>
                   <div className="flex justify-between items-center mt-1 mb-3">
                     <span className="text-md font-medium text-slate-600">{exp.company}</span>
-                    <span className="text-xs font-bold text-slate-400 uppercase tracking-wider bg-white px-2 py-1 rounded shadow-sm border border-slate-100">{exp.startDate} - {exp.endDate || 'Present'}</span>
+                    <span className="text-xs font-bold text-slate-400 uppercase tracking-wider bg-white dark:bg-[#171717] px-2 py-1 rounded shadow-sm border border-slate-100">{exp.startDate} - {exp.endDate || 'Present'}</span>
                   </div>
                   <p className="text-sm text-slate-600 leading-relaxed whitespace-pre-wrap">{exp.description}</p>
                 </div>
@@ -82,7 +82,7 @@ export default function CreatorTemplateTwo({ data }) {
             <h3 className="text-2xl font-bold text-slate-800 dark:text-white mb-6">Projects</h3>
             <div className="grid grid-cols-1 gap-6">
               {data.projects.map(proj => (
-                <div key={proj.id} className="bg-white p-5 rounded-lg shadow-sm border border-slate-100">
+                <div key={proj.id} className="bg-white dark:bg-[#171717] p-5 rounded-lg shadow-sm border border-slate-100">
                   <h4 className="text-lg font-bold text-slate-800 dark:text-white mb-1">{proj.title}</h4>
                   {proj.link && <p className="text-xs text-blue-500 mb-3">{proj.link}</p>}
                   <p className="text-sm text-slate-600 leading-relaxed">{proj.description}</p>

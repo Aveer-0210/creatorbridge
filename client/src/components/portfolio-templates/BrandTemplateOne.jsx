@@ -1,6 +1,6 @@
 export default function BrandTemplateOne({ data }) {
   return (
-    <div className="p-12 font-sans text-slate-800 dark:text-white bg-white" style={{ minHeight: '100%' }}>
+    <div className="p-12 font-sans text-slate-800 dark:text-white bg-white dark:bg-[#171717]" style={{ minHeight: '100%' }}>
       {/* Brand Header */}
       <header className="flex justify-between items-center border-b-2 border-slate-900 pb-8 mb-10">
         <div className="w-2/3">

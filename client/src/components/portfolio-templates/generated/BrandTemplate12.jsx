@@ -1,6 +1,6 @@
 export default function BrandTemplate12({ data }) {
   return (
-    <div className="p-10 font-sans text-slate-800 dark:text-white bg-white min-h-[297mm]">
+    <div className="p-10 font-sans text-slate-800 dark:text-white bg-white dark:bg-[#171717] min-h-[297mm]">
       <header className="border-b-4 border-teal-500 pb-6 mb-8 text-center">
         <h1 className="text-4xl font-bold uppercase tracking-widest mb-2 text-teal-900">{data.personal.name || "BRAND NAME"}</h1>
         <h2 className="text-xl font-medium text-teal-600">{data.personal.title || "Profession"}</h2>
@@ -41,7 +41,7 @@ export default function BrandTemplate12({ data }) {
               <h3 className="text-lg font-bold uppercase tracking-widest text-teal-800 border-b-2 border-slate-200 pb-2 mb-6">Projects</h3>
               <div className="grid grid-cols-1 gap-6">
                 {data.projects.map(proj => (
-                  <div key={proj.id} className="p-4 border border-slate-200 rounded shadow-sm bg-white">
+                  <div key={proj.id} className="p-4 border border-slate-200 rounded shadow-sm bg-white dark:bg-[#171717]">
                     <h4 className="text-md font-bold text-slate-800 dark:text-white mb-1">{proj.title}</h4>
                     {proj.link && <p className="text-xs text-blue-500 mb-2">{proj.link}</p>}
                     <p className="text-sm text-slate-600 leading-relaxed whitespace-pre-wrap">{proj.description}</p>

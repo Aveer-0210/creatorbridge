@@ -40,7 +40,7 @@ export default function CreatorTemplateFour({ data }) {
             <h3 className="text-center text-sm font-bold tracking-[0.3em] uppercase text-stone-400 mb-10">Selected Works</h3>
             <div className="grid grid-cols-2 gap-8">
               {data.projects.map(proj => (
-                <div key={proj.id} className="text-center border border-stone-200 p-6 bg-white">
+                <div key={proj.id} className="text-center border border-stone-200 p-6 bg-white dark:bg-[#171717]">
                   <h4 className="text-md font-bold text-stone-800 mb-2">{proj.title}</h4>
                   <p className="text-xs leading-relaxed text-stone-600 mb-3">{proj.description}</p>
                   {proj.link && <span className="text-xs font-bold uppercase tracking-wider text-stone-900 border-b border-stone-900 pb-1">{proj.link}</span>}

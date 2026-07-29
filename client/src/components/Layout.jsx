@@ -137,7 +137,7 @@ export default function Layout() {
                   <p className="text-sm font-bold text-gray-900 dark:text-white">
                     Connection Request
                   </p>
-                  <p className="mt-1 text-sm text-gray-600">
+                  <p className="mt-1 text-sm text-gray-600 dark:text-slate-400">
                     <span className="font-semibold">{senderName}</span> wants to connect with you.
                   </p>
                 </div>

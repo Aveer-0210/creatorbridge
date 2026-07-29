@@ -187,13 +187,13 @@ export default function Navbar({
                 </button>
                 {menuOpen && (
                   <div className="absolute top-12 right-0 w-48 bg-white dark:bg-[#171717] rounded-lg shadow-premium border border-gray-100 dark:border-[#262626] py-2 fade-up">
-                    <Link to="/profile" className="block px-4 py-2 text-sm text-gray-700 dark:text-slate-300 hover:bg-gray-50 dark:hover:bg-slate-700 hover:text-black dark:hover:text-white transition-colors" onClick={() => setMenuOpen(false)}>Profile</Link>
-                    <Link to="/saved" className="block px-4 py-2 text-sm text-gray-700 dark:text-slate-300 hover:bg-gray-50 dark:hover:bg-slate-700 hover:text-black dark:hover:text-white transition-colors" onClick={() => setMenuOpen(false)}>Saved</Link>
+                    <Link to="/profile" className="block px-4 py-2 text-sm text-gray-700 dark:text-slate-300 hover:bg-gray-50 dark:bg-[#262626] dark:hover:bg-slate-700 hover:text-black dark:text-white dark:hover:text-white transition-colors dark:bg-[#262626]" onClick={() => setMenuOpen(false)}>Profile</Link>
+                    <Link to="/saved" className="block px-4 py-2 text-sm text-gray-700 dark:text-slate-300 hover:bg-gray-50 dark:bg-[#262626] dark:hover:bg-slate-700 hover:text-black dark:text-white dark:hover:text-white transition-colors dark:bg-[#262626]" onClick={() => setMenuOpen(false)}>Saved</Link>
 
-                    <Link to="/settings" className="block px-4 py-2 text-sm text-gray-700 dark:text-slate-300 hover:bg-gray-50 dark:hover:bg-slate-700 hover:text-black dark:hover:text-white transition-colors" onClick={() => setMenuOpen(false)}>Settings</Link>
+                    <Link to="/settings" className="block px-4 py-2 text-sm text-gray-700 dark:text-slate-300 hover:bg-gray-50 dark:bg-[#262626] dark:hover:bg-slate-700 hover:text-black dark:text-white dark:hover:text-white transition-colors dark:bg-[#262626]" onClick={() => setMenuOpen(false)}>Settings</Link>
                     <div className="h-px bg-gray-100 dark:bg-slate-700 my-2"></div>
                     <button
-                      className="w-full text-left bg-transparent border-none px-4 py-2 text-sm text-black dark:text-slate-300 hover:bg-gray-50 dark:hover:bg-slate-700 transition-colors cursor-pointer"
+                      className="w-full text-left bg-transparent border-none px-4 py-2 text-sm text-black dark:text-slate-300 hover:bg-gray-50 dark:bg-[#262626] dark:hover:bg-slate-700 transition-colors cursor-pointer dark:bg-[#262626]"
                       onClick={() => { setMenuOpen(false); logout(); }}
                     >
                       Log out

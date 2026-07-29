@@ -1,6 +1,6 @@
 export default function BrandTemplateFour({ data }) {
   return (
-    <div className="p-0 font-serif text-slate-800 dark:text-white bg-white min-h-[297mm]">
+    <div className="p-0 font-serif text-slate-800 dark:text-white bg-white dark:bg-[#171717] min-h-[297mm]">
       {/* Elegant Header */}
       <div className="p-16 pb-12 text-center bg-slate-50 border-b border-slate-200">
         <h1 className="text-5xl font-semibold tracking-wide text-slate-900 dark:text-white mb-4">{data.personal.name || "Brand Name"}</h1>

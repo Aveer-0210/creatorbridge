@@ -86,6 +86,14 @@ html, body, #root {
     overflow-wrap: anywhere;
     word-break: break-word;
   }
+
+  /* Make tables scrollable on mobile instead of breaking layout */
+  table {
+    display: block;
+    max-width: 100%;
+    overflow-x: auto;
+    white-space: nowrap;
+  }
 }
 
 img, picture, video, canvas, svg {

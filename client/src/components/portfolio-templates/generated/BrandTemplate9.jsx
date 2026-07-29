@@ -41,7 +41,7 @@ export default function BrandTemplate9({ data }) {
               <h3 className="text-lg font-bold uppercase tracking-widest text-cyan-800 border-b-2 border-slate-200 pb-2 mb-6">Projects</h3>
               <div className="grid grid-cols-2 gap-6">
                 {data.projects.map(proj => (
-                  <div key={proj.id} className="p-4 border border-slate-200 rounded shadow-sm bg-white">
+                  <div key={proj.id} className="p-4 border border-slate-200 rounded shadow-sm bg-white dark:bg-[#171717]">
                     <h4 className="text-md font-bold text-slate-800 dark:text-white mb-1">{proj.title}</h4>
                     {proj.link && <p className="text-xs text-blue-500 mb-2">{proj.link}</p>}
                     <p className="text-sm text-slate-600 leading-relaxed whitespace-pre-wrap">{proj.description}</p>

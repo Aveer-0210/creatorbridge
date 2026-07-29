@@ -10,6 +10,7 @@ export default function SplashScreen() {
   const mobileVideoRef = useRef(null);
   const desktopVideoRef = useRef(null);
   const mountTimeRef = useRef(Date.now());
+  const [showWakeText, setShowWakeText] = useState(false);
 
   useEffect(() => {
     // Strictly enforce muted state on the DOM nodes and force play to bypass WebView blocking
@@ -21,6 +22,12 @@ export default function SplashScreen() {
     };
     forceSilentPlay(mobileVideoRef.current);
     forceSilentPlay(desktopVideoRef.current);
+
+    const textTimer = setTimeout(() => {
+      setShowWakeText(true);
+    }, 4500);
+
+    return () => clearTimeout(textTimer);
   }, []);
 
   useEffect(() => {
@@ -47,7 +54,7 @@ export default function SplashScreen() {
   }, [navigate, user, loading]);
 
   return (
-    <div className="splash-container">
+    <div className="splash-container" style={{ position: 'relative' }}>
       <video
         ref={mobileVideoRef}
         src="/mobile_splash.mp4"
@@ -55,7 +62,6 @@ export default function SplashScreen() {
         poster="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
         autoPlay
         muted
-        loop
         playsInline
         controls={false}
         preload="auto"
@@ -70,7 +76,6 @@ export default function SplashScreen() {
         poster="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
         autoPlay
         muted
-        loop
         playsInline
         controls={false}
         preload="auto"
@@ -78,6 +83,13 @@ export default function SplashScreen() {
         controlsList="nodownload nofullscreen noremoteplayback"
         style={{ pointerEvents: 'none' }}
       />
+      {showWakeText && loading && (
+        <div style={{ position: 'absolute', bottom: '15%', left: 0, right: 0, textAlign: 'center', zIndex: 10 }}>
+          <p style={{ color: '#64748B', fontSize: '14px', fontWeight: 500, animation: 'pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite' }}>
+            Waking up server, please wait...
+          </p>
+        </div>
+      )}
     </div>
   );
 }

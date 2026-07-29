@@ -254,7 +254,7 @@ export default function PortfolioBuilder() {
         </div>
 
         <div className="w-2/3 bg-slate-200 dark:bg-slate-900 p-8 overflow-y-auto flex justify-center pb-24">
-          <div className="bg-white shadow-xl" style={{ width: '210mm', minHeight: '297mm', padding: '0', boxSizing: 'border-box', overflow: 'hidden' }}>
+          <div className="bg-white dark:bg-[#171717] shadow-xl dark:bg-[#171717]" style={{ width: '210mm', minHeight: '297mm', padding: '0', boxSizing: 'border-box', overflow: 'hidden' }}>
             <div ref={printRef} style={{ width: '100%', height: '100%', minHeight: '297mm', backgroundColor: '#fff', position: 'relative' }}>
               {(() => {
                 if (selectedTemplateId.startsWith('gen-')) {

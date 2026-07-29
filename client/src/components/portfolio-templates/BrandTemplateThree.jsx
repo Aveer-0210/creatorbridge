@@ -1,8 +1,8 @@
 export default function BrandTemplateThree({ data }) {
   return (
-    <div className="p-0 font-sans text-slate-800 dark:text-white bg-white min-h-[297mm] flex flex-col">
+    <div className="p-0 font-sans text-slate-800 dark:text-white bg-white dark:bg-[#171717] min-h-[297mm] flex flex-col">
       {/* Top Header - Geometric */}
-      <header className="relative bg-white pt-16 px-16 pb-8 border-b-8 border-red-600">
+      <header className="relative bg-white dark:bg-[#171717] pt-16 px-16 pb-8 border-b-8 border-red-600">
         <div className="absolute top-0 right-0 w-1/3 h-full bg-slate-100 -z-10" style={{ clipPath: 'polygon(20% 0, 100% 0, 100% 100%, 0% 100%)' }}></div>
         <div className="flex justify-between items-end">
           <div className="w-2/3">
@@ -46,7 +46,7 @@ export default function BrandTemplateThree({ data }) {
         </div>
 
         {/* Right Main Content */}
-        <div className="w-2/3 p-10 bg-white">
+        <div className="w-2/3 p-10 bg-white dark:bg-[#171717]">
           {data.experience.length > 0 && (
             <section className="mb-12">
               <h3 className="text-2xl font-black uppercase text-slate-900 dark:text-white mb-6 flex items-center">

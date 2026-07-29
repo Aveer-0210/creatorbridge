@@ -155,7 +155,7 @@ export default function PortfolioBuilder() {
 
   if (loading) return <LoadingSpinner centered />;
 
-  const inputClass = "w-full p-3 border border-slate-200 rounded-xl bg-slate-50 focus:bg-white focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-all dark:bg-slate-800/50 dark:border-slate-700 dark:text-white outline-none text-sm md:text-base";
+  const inputClass = "w-full p-3 border border-slate-200 rounded-xl bg-slate-50 focus:bg-white dark:bg-[#171717] focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-all dark:bg-slate-800/50 dark:border-slate-700 dark:text-white outline-none text-sm md:text-base";
   const labelClass = "block text-xs font-semibold text-slate-500 dark:text-slate-400 mb-1.5 uppercase tracking-wider";
 
   const allTabs = ['personal', 'experience', 'education', 'skills', 'projects', 'certifications', 'social links', 'resume', 'preview'];
@@ -210,7 +210,7 @@ export default function PortfolioBuilder() {
           </div>
 
           <div className="flex gap-2 w-full sm:w-auto">
-            <button onClick={handleSave} disabled={saving} className="flex-1 sm:flex-none px-4 md:px-6 py-2 md:py-2.5 text-xs md:text-sm font-bold text-blue-600 bg-white border-2 border-blue-600 rounded-full hover:bg-blue-50 dark:bg-transparent dark:hover:bg-blue-900/30 transition-all text-center">
+            <button onClick={handleSave} disabled={saving} className="flex-1 sm:flex-none px-4 md:px-6 py-2 md:py-2.5 text-xs md:text-sm font-bold text-blue-600 bg-white dark:bg-[#171717] border-2 border-blue-600 rounded-full hover:bg-blue-50 dark:bg-transparent dark:hover:bg-blue-900/30 transition-all text-center">
               {saving ? "..." : "Save"}
             </button>
             <button onClick={handleDownloadPdf} disabled={generating} className="flex-1 sm:flex-none px-4 md:px-6 py-2 md:py-2.5 text-xs md:text-sm font-bold bg-blue-600 text-white rounded-full hover:bg-blue-700 shadow-lg shadow-blue-500/20 transition-all text-center">
@@ -486,7 +486,7 @@ export default function PortfolioBuilder() {
         <div className={`w-full md:w-2/3 bg-slate-100 dark:bg-[#0a0a0a] p-4 sm:p-6 md:p-10 overflow-y-auto flex justify-center pb-32 custom-scrollbar ${activeTab === 'preview' ? 'flex' : 'hidden md:flex'}`}>
           
           <div style={{ transform: `scale(${previewScale})`, transformOrigin: 'top center', transition: 'transform 0.2s ease' }}>
-            <div className="bg-white shadow-[0_20px_50px_rgba(0,0,0,0.1)] dark:shadow-[0_20px_50px_rgba(0,0,0,0.5)] rounded-sm ring-1 ring-slate-900/5 dark:ring-white/10" style={{ width: '210mm', minHeight: '297mm', padding: '0', boxSizing: 'border-box', overflow: 'hidden' }}>
+            <div className="bg-white dark:bg-[#171717] shadow-[0_20px_50px_rgba(0,0,0,0.1)] dark:shadow-[0_20px_50px_rgba(0,0,0,0.5)] rounded-sm ring-1 ring-slate-900/5 dark:ring-white/10 dark:bg-[#171717]" style={{ width: '210mm', minHeight: '297mm', padding: '0', boxSizing: 'border-box', overflow: 'hidden' }}>
               <div ref={printRef} style={{ width: '100%', height: '100%', minHeight: '297mm', backgroundColor: '#fff', position: 'relative' }}>
                 {(() => {
                   if (selectedTemplateId.startsWith('gen-')) {
