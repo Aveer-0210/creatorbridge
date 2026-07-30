@@ -343,7 +343,7 @@ export default function Layout() {
                   required
                 ></textarea>
               </div>
-              <div className="bg-blue-50 dark:bg-blue-900/30 text-blue-800 dark:text-blue-200 p-4 rounded-xl text-sm flex gap-3 items-start mt-2">
+              <div className="bg-white dark:bg-blue-900/30 text-blue-800 dark:text-blue-200 p-4 rounded-xl text-sm flex gap-3 items-start mt-2 border border-blue-100 dark:border-blue-800/50">
                 <svg className="flex-shrink-0 mt-0.5" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="16" x2="12" y2="12"></line><line x1="12" y1="8" x2="12.01" y2="8"></line></svg>
                 <p>We will reply to your registered email (<strong>{user?.email}</strong>) as soon as possible.</p>
               </div>

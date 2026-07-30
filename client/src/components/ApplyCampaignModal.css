@@ -110,7 +110,8 @@
   font-size: 12px;
   font-weight: 600;
   color: #2563EB;
-  background: #EFF6FF;
+  background: #FFFFFF;
+  border: 1px solid #E2E8F0;
   padding: 2px 8px;
   border-radius: 4px;
   display: inline-block;
@@ -279,8 +280,9 @@ textarea {
 }
 
 .portfolio-icon {
-  background: #EFF6FF;
+  background: #FFFFFF;
   color: #2563EB;
+  border: 1px solid #E2E8F0;
 }
 
 .social-icon {

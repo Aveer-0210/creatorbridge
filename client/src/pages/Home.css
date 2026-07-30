@@ -141,7 +141,7 @@
 
 .post-box-input {
   flex: 1;
-  background: #EFF6FF;
+  background: #F8FAFC;
   border: none;
   padding: 12px 16px;
   border-radius: 12px;
@@ -259,7 +259,7 @@
   font-size: 0.75rem;
   font-weight: 600;
   color: var(--primary-action, #1F6BFF);
-  background-color: #EFF6FF;
+  background-color: #F1F5F9;
   border: none;
   border-radius: 6px;
   cursor: pointer;
@@ -829,7 +829,7 @@
   width: 40px;
   height: 40px;
   border-radius: 50%;
-  background: #EFF6FF;
+  background: #F1F5F9;
   color: #2563EB;
   display: flex;
   align-items: center;
@@ -924,7 +924,8 @@
 }
 
 .trend-card-blue {
-  background: #dbeafe !important;
+  background: #FFFFFF !important;
+  border: 1px solid #E2E8F0 !important;
 }
 .dark .trend-card-blue {
   background: rgba(59, 130, 246, 0.15) !important;

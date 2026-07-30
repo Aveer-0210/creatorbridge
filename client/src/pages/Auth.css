@@ -94,7 +94,8 @@
 .auth-icon-box {
   width: 64px;
   height: 64px;
-  background: linear-gradient(135deg, #EFF6FF 0%, #DBEAFE 100%);
+  background: #FFFFFF;
+  border: 1px solid #E2E8F0;
   border-radius: 20px;
   display: flex;
   align-items: center;
